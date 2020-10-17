@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/grid"
+           android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+        app:columnCount="3"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/board"
+        app:rowCount="3"
+        >
+
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:onClick="dropin"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="9dp"
+            android:tag="0"
+            ></ImageView>
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:onClick="dropin"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="9dp"
+            android:tag="1"
+            ></ImageView>
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:onClick="dropin"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="9dp"
+            android:tag="2"
+            ></ImageView>
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:onClick="dropin"
+            android:layout_marginTop="33dp"
+            android:layout_marginLeft="9dp"
+            android:tag="3"
+            ></ImageView>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="33dp"
+            android:onClick="dropin"
+            android:tag="4"
+            ></ImageView>
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:onClick="dropin"
+            android:layout_marginTop="33dp"
+            android:layout_marginLeft="9dp"
+            android:tag="5"
+            ></ImageView>
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:onClick="dropin"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="17dp"
+            android:tag="6"
+            ></ImageView>
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:onClick="dropin"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="15dp"
+            android:tag="7"
+            ></ImageView>
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:onClick="dropin"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="15dp"
+            android:tag="8"
+            ></ImageView>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:id="@+id/linearlayout"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0000FF"
+            android:textColor="#FFFF00"
+            android:textSize="30dp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="again"
+            android:text="PLAY AGAIN"
+            android:textStyle="italic" />
+    </LinearLayout>
+</RelativeLayout>
